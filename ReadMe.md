@@ -7,5 +7,5 @@ POST:http://url:8080/convert
 Content-Type:multipart/form-data
  - parma1: file   -->bin
  - parma2: target -->String
->将待转化文件上传到服务端，若转化完成，则返回转化后的文件，如果转化失败，则返回空值（待改进）
+>将待转化文件上传到服务端，若转化完成，则返回转化后的文件,转化失败返回值415
  
