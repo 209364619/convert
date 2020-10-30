@@ -1,8 +1,8 @@
-#libreoffice对word文件进行转换
-##服务状态测试
+# libreoffice对word文件进行转换
+## 服务状态测试
 GET:http://url:8080/
 reponse: welcome to libreoffice convert
-##上传并获取转化后的文件
+## 上传并获取转化后的文件
 POST:http://url:8080/convert
 Content-Type:multipart/form-data
  - parma1: file   -->bin
@@ -13,6 +13,6 @@ Content-Type:multipart/form-data
 + docx -- txt
 + doc --> pdf
 + docx -- pdf
-#该服务以结合打包到docker容器内，可通过拉取镜像查看效果
+# 该服务以结合打包到docker容器内，可通过拉取镜像查看效果
 docker pull registry.cn-hangzhou.aliyuncs.com/hph/libreoffice:v2
 docker run -itd -p 8080:8080 registry.cn-hangzhou.aliyuncs.com/hph/libreoffice:v2
